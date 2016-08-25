@@ -1,0 +1,22 @@
+{% extends "./layouts/master.html" %}
+
+{% set page_title = "Home" %}
+
+{% block body %}
+
+    <header>
+        <h1>Task manager</h1>
+    </header>
+    <div class="progress-bar"></div>
+    <section id="task-container"></section>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(event) 
+    { 
+        var app = new App();
+        app.init();
+        app.load();
+    });
+    </script>
+
+{% endblock %}

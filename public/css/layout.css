@@ -1,0 +1,13 @@
+body
+{
+	padding 		: 0;
+	margin 			: 0;
+	background-color: #eaedf2;
+    font-family     : 'Lato', sans-serif;
+}
+
+/* Remove dirty blue outline on Chrome */
+input:focus, button:focus
+{
+	outline         : 0;
+}

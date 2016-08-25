@@ -1,0 +1,1 @@
+INSERT INTO tasks (name, tag) VALUES ($1, 0) RETURNING id;

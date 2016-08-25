@@ -1,0 +1,1 @@
+UPDATE tasks SET finished_at= CASE WHEN($4) THEN CURRENT_TIMESTAMP ELSE NULL END, tag=$3, name=$2 WHERE id=$1;

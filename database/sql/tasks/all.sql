@@ -1,0 +1,1 @@
+SELECT * FROM tasks WHERE deleted_at IS NULL ORDER BY created_at ASC;

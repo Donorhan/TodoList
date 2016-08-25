@@ -1,0 +1,232 @@
+/**
+ * Header
+ */
+header
+{
+    display         : block;
+    padding         : 10px 25px;
+    margin          : 0;
+    background-color: #f6f6f6;
+    color           : #555;
+}
+
+.progress-bar
+{
+    display         : block;
+    width           : 100%;
+    height          : 5px;
+    background-color: #6dacdf;
+    margin-bottom   : 35px;
+}
+
+/**
+ * Task container
+ */
+.task-container
+{
+    position        : relative;
+    border-top      : 2px solid #95e9e2;
+    width           : 350px;
+    margin          : 0 auto;
+    background-color: white;
+    overflow        : hidden;
+}
+
+.task-container .task-group-title
+{
+    display         : block;
+    border          : 0;
+    width           : 100%;
+    margin          : 0 auto;
+    background-color: #fbfbff;
+    padding         : 15px 20px;
+    border-bottom   : 1px solid #e0e9f1;
+    font-weight     : normal;
+    color           : #444;    
+    font-size       : 16pt;
+}
+
+.task-container h2
+{
+    border-top      : 1px solid #95e9e2;
+    width           : 350px;
+    margin          : 0 auto;
+    background-color: #fbfbff;
+    padding         : 15px 20px;
+    border-bottom   : 1px solid #e0e9f1;
+    font-weight     : normal;
+    color           : #444;
+}
+
+.task-container .progression
+{
+    position        : absolute;
+    top             : 19px;
+    right           : 15px;
+    color           : #999;
+}
+
+.task-container > ul
+{
+    margin          : 0;
+    padding         : 0;
+    list-style-type : none;
+    transition      : all 250ms linear;
+}
+
+.task-container ul > li
+{
+    position        : relative;
+    border-bottom   : 1px solid #f7f8fa;
+    border-top      : 1px solid #fbfdfc;
+    border-left     : 5px solid white;
+    padding         : 5px;
+    transition      : all 500ms linear;
+}
+
+.task-container ul > li:hover
+{
+    transition      : all 250ms linear;
+    border-bottom   : 1px solid #ddd;
+    border-top      : 1px solid #ddd;
+}
+
+.task-container ul > li input[type="checkbox"]
+{
+    margin-right    : 10px;
+    margin-left     : 5px;
+}
+
+.task-container ul > li input[type="text"]
+{
+    border          : 0;
+    padding         : 0;
+    margin          : 0;
+    height          : 35px;
+    font-size       : 11pt;
+    font-weight     : 300;
+    width           : 275px;
+}
+
+.task-container ul > li input[type="checkbox"]:checked + input[type="text"]
+{
+    text-decoration:line-through;
+}
+
+.task-container ul > li i
+{
+    position        : absolute;
+    top             : 14px;
+    right           : 10px;
+    border          : none;    
+    width           : 11px;
+    text-align      : center;
+    background      : none;
+    cursor          : pointer;
+    color           : #ddd;
+}
+
+.task-container ul > li:hover i
+{
+    transition      : all 250ms linear;
+    color           : #777;
+}
+
+.task-container > button
+{
+    border          : 0;
+    padding         : 0;
+    margin          : 0;
+    display         : block;
+    width           : 100%;
+    overflow        : hidden;
+    background-color: #f6f6f6;
+    font-size       : 9pt;
+    text-transform  : uppercase;
+    padding         : 11px 17px;
+    color           : #777;
+    text-align      : left;
+    cursor          : pointer;
+    transition      : all 250ms linear;
+}
+
+.task-container > button:hover
+{
+    transition      : all 150ms linear;
+    color           : #389ADC;
+    background-color: #CBE5F6;
+}
+
+.task-container > button > i
+{
+    margin-right: 12px;
+}
+
+/**
+ * Effects
+ */
+.task-container ul > li.removed
+{
+    position        : relative;
+    border-bottom   : 1px solid #FFCCCC;
+    border-top      : 1px solid #FFCCCC;
+    border-left     : 5px solid #FFE5E5;
+    padding         : 5px;
+    background-color: #FFE5E5;
+}
+
+.task-container ul > li.removed
+{
+    position        : relative;
+    border-bottom   : 1px solid #FFCCCC;
+    border-top      : 1px solid #FFCCCC;
+    border-left     : 5px solid #FFE5E5;
+    padding         : 5px;
+    background-color: #FFE5E5;
+}
+
+.task-container ul > li.removed:hover
+{
+    transition      : all 250ms linear;
+    border-bottom   : 1px solid #FFB3B3;
+    border-top      : 1px solid #FFB3B3;
+}
+
+.task-container ul > li.removed input[type="text"]
+{
+    color           : #ccc;
+    background-color: #FFE5E5;
+}
+
+.fadeIn
+{
+    opacity         : 0;
+}
+
+/**
+ * Tags
+ */
+.task-container ul > li.tag-orange
+{
+    border-left-color: #FF6633;
+}
+
+.task-container ul > li.tag-blue
+{
+    border-left-color: #8FE3FF;
+}
+
+.task-container ul > li.tag-purple
+{
+    border-left-color: #ECB3FF;
+}
+
+.task-container ul > li.tag-pink
+{
+    border-left-color: #FFC2ED;
+}
+
+.task-container ul > li.tag-green
+{
+    border-left-color: #85FFA9;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "mytasks",
+  "version": "1.0.0",
+  "description": "A task manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Donovan ORHAN",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.3.*",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "nunjucks": "^2.4.2",
+    "pg-promise": "^5.2.5",
+    "socket.io": "^1.4.8"
+  }
+}
