@@ -1,5 +1,7 @@
 TaskManager is a simple ToDo-list in real-time.
 
+![Preview](https://i.imgsafe.org/cf3819ca89.jpg)
+
 CONTENTS OF THIS FILE
 ---------------------
  * Configuration
